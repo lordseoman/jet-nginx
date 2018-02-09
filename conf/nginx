@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DF_VOLUMES="['opt/nginx']"
+DF_PORTS="80 443"
+
+RN_VOLUMES="-v /mnt/Nginx:/opt/nginx -v /mnt/Reports:/opt/Reports"
+RN_PORTS="-p 80:80 -p 443:443"
