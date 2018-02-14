@@ -38,12 +38,12 @@ COPY nginx-conf/$REALM/ssl/ /etc/nginx/ssl/
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh", "$SCRIPTARGS"]
 
 STOPSIGNAL SIGTERM
 
 VOLUME $DF_VOLUMES
 EXPOSE $DF_PORTS
 
-CMD [SCRIPTARGS]
+CMD ["start"]
 

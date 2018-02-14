@@ -13,5 +13,5 @@ docker run \
     --name jet-${MODULE} \
     ${RN_VOLUMES} \
     --net=host \
-    $RN_PORTS \
+    ${RN_PORTS} \
     jet-$MODULE:$VER

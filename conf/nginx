@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DF_VOLUMES="['opt/nginx']"
+DF_VOLUMES="['opt/nginx', '/opt/Reports']"
 DF_PORTS="80 443"
 
 RN_VOLUMES="-v /mnt/Nginx:/opt/nginx -v /mnt/Reports:/opt/Reports"
